@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/6c0998cc-4da2-492d-b691-d5ea76cfcc06
 #### 3. LiDAR-only odometry
 #### 4. monocular visual  odometry
 
-## 2. catkin_make
+## 2. Catkin_make code
 ```bash
 git clone https://github.com/af-doom/LCC_init.git
 ```
@@ -21,23 +21,23 @@ Enter the following folders to modify "LIDAR_ODOM" and "Camera_odom" parameters
 cd LCC_motion/src/LCC_motion/launch/livox_avia.launch
 ```
 ## 3. coarse calibration 
-#### 1.Start calibration node
+#### 1. Start calibration node
 ```bash
 roslaunch lcc_motion livox_avia.launch
 ```
-#### 2.Start LiDAR-only odometry node, for example
+#### 2. Start LiDAR-only odometry node, for example
 [I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)  
 
-#### 3.Start monocular visual  odometry  node, for example
+#### 3. Start monocular visual  odometry  node, for example
 [orb_slam3_ros](https://github.com/thien94/orb_slam3_ros)
 
-#### 4.Result
+#### 4. Result
 ```bash
 cd LCC_motion/src/LCC_motion/ressults
 ```
 It is recommended to use "Hand-Eye Calibration (only Rotation Based Vins-Mono)"
 ![Result details](Result.png)'
-## 3. High-precision calibration
+## 4. High-precision calibration
 
 **This GitHub library is a supplement to SPTG-LCC. For detailed high-precision calibration, see SPTG-LCC**
 [SPTG-LCC](https://github.com/NKU-MobFly-Robotics/SPTG-LCC)
