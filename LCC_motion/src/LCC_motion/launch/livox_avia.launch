@@ -1,0 +1,12 @@
+<launch>
+    <!-- 定义传入参数 -->
+    <arg name="lidar_odom" default="/aft_mapped_to_init" />
+    <arg name="camera_odom" default="/orb_slam3/camera_pose" />
+
+    <!-- 使用传入参数 -->
+    <node pkg="lcc_motion" type="LIcalib" name="LIcalib" output="screen">
+        <param name="lidar_odom" value="$(arg lidar_odom)" />
+        <param name="camera_odom" value="$(arg camera_odom)" />
+    </node>
+</launch>
+

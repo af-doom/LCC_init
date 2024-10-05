@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/wyw/ROS1_PROJECT/BD/lidar_imu_init/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/wyw/ROS1_PROJECT/BD/lidar_imu_init/src/FAST_LIO/include/**",
+        "/home/wyw/ROS1_PROJECT/BD/lidar_imu_init/src/LiDAR_IMU_Init/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,107 @@
+common:
+    lid_topic:  "/velodyne_points" #"/kitti/velo/pointcloud"
+    imu_topic:  "/kitti/oxts/imu" #"/GPS//imu/data"
+
+# preprocess:
+#     lidar_type: 2                # Velodyne LiDAR
+#     scan_line: 16
+#     blind: 1 #2
+#     feature_extract_en: false
+
+# initialization:
+#     cut_frame: true # false: do not cut input pointcloud
+#     cut_frame_num: 5 # must be positive integer
+#     orig_odom_freq: 10
+#     mean_acc_norm: 9.805 # 1: for livox built-in IMU
+#     online_refine_time: 40  #外参优化时间
+#     data_accum_length: 350  #地图漂移时改为500 800
+#     Rot_LI_cov: [ 0.00005, 0.00005, 0.00005 ]
+#     Trans_LI_cov: [ 0.0001, 0.0001, 0.0001 ]
+# mapping:
+#     filter_size_surf: 0.5 #0.15  室内场景0.05-0.25  宽阔的室外 0.5 *************
+#     filter_size_map: 0.5 #0.2   室内场景0.15-0.35  宽阔的室外 0.5 *************
+#     gyr_cov: 0.5
+#     acc_cov: 0.5
+#     b_acc_cov: 0.0001
+#     b_gyr_cov: 0.0001
+#     det_range: 100.0
+
+# publish:
+#     path_en:  true
+#     scan_publish_en:  true       # false: close all the point cloud output
+#     dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
+#     scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+# pcd_save:
+#     pcd_save_en: true
+#     interval: -1                 # how many LiDAR frames saved in each pcd file; 
+#                                  # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
+
+preprocess:
+    lidar_type: 2                # Velodyne LiDAR
+    scan_line: 64
+    blind: 0.8 #2
+    feature_extract_en: false
+
+initialization:
+    cut_frame: true # false: do not cut input pointcloud
+    cut_frame_num: 5 # must be positive integer
+    orig_odom_freq: 10
+    mean_acc_norm: 9.805 # 1: for livox built-in IMU
+    online_refine_time: 50.0  #外参优化时间
+    data_accum_length: 400  #地图漂移时改为500 800
+    Rot_LI_cov: [ 0.00005, 0.00005, 0.00005 ]
+    Trans_LI_cov: [ 0.0001, 0.0001, 0.0001 ]
+mapping:
+    filter_size_surf: 0.5 #0.15  室内场景0.05-0.25  宽阔的室外 0.5 *************
+    filter_size_map: 0.5 #0.2   室内场景0.15-0.35  宽阔的室外 0.5 *************
+    gyr_cov: 0.5
+    acc_cov: 0.5
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    det_range: 100.0
+
+publish:
+    path_en:  true
+    scan_publish_en:  true       # false: close all the point cloud output
+    dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
+    scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+pcd_save:
+    pcd_save_en: true
+    interval: -1                 # how many LiDAR frames saved in each pcd file; 
+                                 # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
+# preprocess:
+#     lidar_type: 2                # Velodyne LiDAR
+#     scan_line: 16
+#     blind: 0.8 #2
+#     feature_extract_en: false
+
+# initialization:
+#     cut_frame: true # false: do not cut input pointcloud
+#     cut_frame_num: 5 # must be positive integer
+#     orig_odom_freq: 10
+#     mean_acc_norm: 9.805 # 1: for livox built-in IMU
+#     online_refine_time: 50.0  #外参优化时间
+#     data_accum_length: 350  #地图漂移时改为500 800
+#     Rot_LI_cov: [ 0.00005, 0.00005, 0.00005 ]
+#     Trans_LI_cov: [ 0.0001, 0.0001, 0.0001 ]
+# mapping:
+#     filter_size_surf: 0.3 #0.15  室内场景0.05-0.25  宽阔的室外 0.5 *************
+#     filter_size_map: 0.3 #0.2   室内场景0.15-0.35  宽阔的室外 0.5 *************
+#     gyr_cov: 0.5
+#     acc_cov: 0.5
+#     b_acc_cov: 0.0001
+#     b_gyr_cov: 0.0001
+#     det_range: 100.0
+
+# publish:
+#     path_en:  true
+#     scan_publish_en:  true       # false: close all the point cloud output
+#     dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
+#     scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+# pcd_save:
+#     pcd_save_en: true
+#     interval: -1                 # how many LiDAR frames saved in each pcd file; 
+#                                  # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
