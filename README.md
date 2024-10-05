@@ -20,11 +20,18 @@ Enter the following folders to modify "LIDAR_ODOM" and "Camera_odom" parameters
 cd LCC_motion/src/LCC_motion/launch/livox_avia.launch
 ```
 ## 3. coarse calibration 
-Start calibration node
+#### 1.Start calibration node
 ```bash
 roslaunch lcc_motion livox_avia.launch
 ```
-Start LiDAR-only odometry node, for example
-[I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)
-Start monocular visual  odometry  node, for example
+#### 2.Start LiDAR-only odometry node, for example
+[I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)  
+
+#### 3.Start monocular visual  odometry  node, for example
 [orb_slam3_ros](https://github.com/thien94/orb_slam3_ros)
+
+#### 4.Result
+```bash
+cd LCC_motion/src/LCC_motion/ressults
+```
+![Result details](./img/Result.png)
