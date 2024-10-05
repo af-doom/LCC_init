@@ -2,7 +2,7 @@
 LiDAR camera extrinsic parameter initialization calibration
 This is a motion-based coarse calibration method for LiDAR-camera extrinsic parameters, with input being a monocular visual odometry and a LiDAR-only odometry.
 <video width="320" height="240" controls>
-  <source src="test.mp4" type="video/mp4">
+  <source src="[test.mp4](https://github.com/user-attachments/assets/6c0998cc-4da2-492d-b691-d5ea76cfcc06)" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
