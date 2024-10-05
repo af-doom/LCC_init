@@ -8,7 +8,7 @@ This is a motion-based coarse calibration method for LiDAR-camera extrinsic para
 #### 3. LiDAR-only odometry
 #### 4. monocular visual  odometry
 
-## 2. coarse calibration 
+## 2. catkin_make
 ```bash
 git clone https://github.com/af-doom/LCC_init.git
 ```
@@ -19,3 +19,12 @@ Enter the following folders to modify "LIDAR_ODOM" and "Camera_odom" parameters
 ```bash
 cd LCC_motion/src/LCC_motion/launch/livox_avia.launch
 ```
+## 3. coarse calibration 
+Start calibration node
+```bash
+roslaunch lcc_motion livox_avia.launch
+```
+Start LiDAR-only odometry node, for example
+[I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)
+Start monocular visual  odometry  node, for example
+[orb_slam3_ros](https://github.com/thien94/orb_slam3_ros)
