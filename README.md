@@ -36,4 +36,8 @@ roslaunch lcc_motion livox_avia.launch
 cd LCC_motion/src/LCC_motion/ressults
 ```
 It is recommended to use "Hand-Eye Calibration (only Rotation Based Vins-Mono)"
-![Result details](Result.png)
+![Result details](Result.png)'
+## 3. High-precision calibration
+
+**This GitHub library is a supplement to SPTG-LCC. For detailed high-precision calibration, see SPTG-LCC**
+[SPTG-LCC](https://github.com/NKU-MobFly-Robotics/SPTG-LCC)
