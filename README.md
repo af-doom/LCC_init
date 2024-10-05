@@ -21,7 +21,7 @@ Enter the following folders to modify "LIDAR_ODOM" and "Camera_odom" parameters
 cd LCC_motion/src/LCC_motion/launch/livox_avia.launch
 ```
 ## 3. coarse calibration 
-**test data (rosbag)"" [Baidu Cloud Disk](https://pan.baidu.com/s/18APwneXO_2jgyLc7ioRo6g?pwd=0lhl)
+**test data (rosbag)** [Baidu Cloud Disk](https://pan.baidu.com/s/18APwneXO_2jgyLc7ioRo6g?pwd=0lhl)
 #### 1. Start calibration node
 ```bash
 roslaunch lcc_motion livox_avia.launch
