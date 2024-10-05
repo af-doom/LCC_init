@@ -34,4 +34,5 @@ roslaunch lcc_motion livox_avia.launch
 ```bash
 cd LCC_motion/src/LCC_motion/ressults
 ```
+It is recommended to use "Hand-Eye Calibration (only Rotation Based Vins-Mono)"
 ![Result details](Result.png)
