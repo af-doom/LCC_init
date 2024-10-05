@@ -43,4 +43,4 @@ It is recommended to use "Hand-Eye Calibration (only Rotation Based Vins-Mono)"
 [SPTG-LCC](https://github.com/NKU-MobFly-Robotics/SPTG-LCC)
 
 # Acknowledgements  
-- We sincerely appreciate the following open-source projects:[I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)  ,   [orb_slam3_ros](https://github.com/thien94/orb_slam3_ros), [VINS-Mono]([orb_slam3_ros](https://github.com/thien94/orb_slam3_ros)), 
+- We sincerely appreciate the following open-source projects:[I2EKF-LO](https://github.com/YWL0720/I2EKF-LO)  ,   [orb_slam3_ros](https://github.com/thien94/orb_slam3_ros), [VINS-Mono]((https://github.com/HKUST-Aerial-Robotics/VINS-Mono), 
