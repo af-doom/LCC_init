@@ -34,4 +34,4 @@ roslaunch lcc_motion livox_avia.launch
 ```bash
 cd LCC_motion/src/LCC_motion/ressults
 ```
-![Result details](./img/Result.png)
+![Result details](Result.png)
