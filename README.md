@@ -1,6 +1,10 @@
 # LCC_init
 LiDAR camera extrinsic parameter initialization calibration
 This is a motion-based coarse calibration method for LiDAR-camera extrinsic parameters, with input being a monocular visual odometry and a LiDAR-only odometry.
+<video width="320" height="240" controls>
+  <source src="test.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 1. Prerequisites
 #### 1. ubuntu and ROS
